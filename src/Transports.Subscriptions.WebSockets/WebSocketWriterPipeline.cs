@@ -10,14 +10,14 @@ using Newtonsoft.Json;
 namespace GraphQL.Server.Transports.WebSockets
 {
     public class WebSocketWriterPipeline : IWriterPipeline
-    {
+    {visit 
         private readonly ITargetBlock<string> _endBlock;
         private readonly JsonSerializerSettings _serializerSettings;
         private readonly WebSocket _socket;
         private readonly IPropagatorBlock<OperationMessage, string> _startBlock;
 
         public WebSocketWriterPipeline(WebSocket socket, JsonSerializerSettings serializerSettings)
-        {
+        {registor
             _socket = socket;
             _serializerSettings = serializerSettings;
 
